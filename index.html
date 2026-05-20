@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Путь из варяг — Исторический интерактивный квест в Смоленске</title>
+    <meta name="description" content="Единственный в регионе живой исторический квест под открытым небом. Гнёздово и Смоленская крепость.">
+    <!-- Подключаем библиотеку IMask для красивого ввода телефона -->
+    <script src="https://cdn.jsdelivr.net/npm/imask"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M3 15h18l-3 5H6l-3-5z"/>
+                    <path d="M12 15V3L18 8l-6 3"/>
+                </svg>
+                <span>Путь из варяг</span>
+            </a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-item">О квесте</a></li>
+                    <li><a href="#route" class="nav-item">Маршрут</a></li>
+                    <li><a href="#prices" class="nav-item">Тарифы</a></li>
+                    <li><a href="#booking" class="nav-item nav-btn">Бронировать</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>Стань героем древней истории</h1>
+                <p>Единственный в регионе живой исторический квест под открытым небом. Гнёздовский археологический комплекс и Смоленская крепость ждут твою дружину.</p>
+                <a href="#route" class="btn">Изучить маршрут</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Что такое «Путь из варяг»?</h2>
+                <p class="section-desc">Забудьте о скучных экскурсиях, где нужно просто стоять и слушать экскурсовода. Мы предлагаем полное погружение в эпоху раннего Средневековья.</p>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>«Путь из варяг» — это масштабная сюжетно-ролевая игра в реальном времени. В основе квеста лежат подлинные исторические факты о Смоленске IX–XVII веков, берестяные грамоты и археологические находки Гнёздовских курганов.</p>
+                        <p>Как только ваша дружина прибывает на место, вы получаете доступ к секретному веб-приложению на вашем смартфоне. Приложение ведет вас по GPS-меткам, выдает загадки, аудио-подсказки от «духов предков» и открывает тайники.</p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                            <h3>Смартфон — ваш компас</h3>
+                            <p>Вам не нужен гид. Интерактивная карта, задания и таймер находятся в вашем телефоне. Играйте в своем темпе, без посторонних в группе.</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                            <h3>Живые актеры</h3>
+                            <p>На ключевых точках маршрута вас встретят ремесленники, воины и торговцы. Выторгуйте у них подсказки или докажите свою силу в мини-играх.</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            <h3>Реальные артефакты</h3>
+                            <p>Никакого пластика. Вы будете держать в руках копии старинных ключей, читать шифры на пергаменте и стрелять из настоящих реконструкторских луков.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="route" id="route">
+            <div class="container">
+                <h2 class="route__title">Сюжетная линия: Ваша сага</h2>
+                <p class="section-desc">Квест рассчитан на 3-4 часа физической активности и мозговых штурмов. Маршрут охватывает две главные исторические локации Смоленска.</p>
+                
+                <div class="timeline">
+                    <article class="timeline__item" itemprop="hasPart" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="timeline__badge">Локация: Гнёздово (Час 1)</div>
+                        <h3 class="timeline__heading" itemprop="name">Пробуждение Дружины и Обряд</h3>
+                        <div class="timeline__desc" itemprop="description">
+                            <p>Квест начинается в крупнейшем археологическом заповеднике Европы. Ваша задача — доказать, что вы достойны отправиться в путь «из варяг в греки».</p>
+                            <ul>
+                                <li><strong>Испытание ума:</strong> Расшифруйте рунический камень у Центрального кургана, чтобы найти карту волока.</li>
+                                <li><strong>Испытание тела:</strong> Мастер-класс по метанию сулиц (копий) и стрельбе из исторического лука.</li>
+                                <li><strong>Артефакт:</strong> Получение «подорожной грамоты» от ярла поселения.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline__item" itemprop="hasPart" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="timeline__badge">Локация: Днепровский берег (Час 2)</div>
+                        <h3 class="timeline__heading" itemprop="name">Волок и Торговый Договор</h3>
+                        <div class="timeline__desc" itemprop="description">
+                            <p>Спустившись к реке Днепр, вы столкнетесь с логистическим кошмаром древности. Торговые пути заблокированы, а местное племя требует дань.</p>
+                            <ul>
+                                <li>Взаимодействие с актером-купцом: обменяйте найденные ранее вещи на жизненно важные сведения.</li>
+                                <li>Командная работа: логическая головоломка с противовесами для переправы условного «груза».</li>
+                                <li>Поиск спрятанного в корнях многовекового дуба сундука с «серебряными дирхемами».</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="timeline__item" itemprop="hasPart" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="timeline__badge">Локация: Крепость (Час 3)</div>
+                        <h3 class="timeline__heading" itemprop="name">Осада Башни Орел</h3>
+                        <div class="timeline__desc" itemprop="description">
+                            <p>Вы переноситесь на несколько веков вперед, к стенам величественной Смоленской крепости зодчего Федора Коня. Враг у ворот.</p>
+                            <ul>
+                                <li>Исследование бойниц и поиск скрытых знаков каменщиков XVII века на кирпичах стены.</li>
+                                <li>Дешифровка письма осажденных с помощью специального трафарета-криптекса.</li>
+                                <li>Финальная разгадка и получение главного приза — памятных медальонов из латуни ручной ковки для каждого участника.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices" class="prices">
+            <div class="container">
+                <h2>Сбор дружины (Тарифы)</h2>
+                <p class="section-desc">Снаряжение, услуги актеров и памятные призы включены во все тарифы.</p>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>«Малая дружина»</h3>
+                        <div class="price">2 500 ₽</div>
+                        <p>Для групп от 2 до 4 человек.<br><br>Идеальный формат для семей с детьми или небольшого свидания с историей.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>«Княжеский полк»</h3>
+                        <div class="price">4 500 ₽</div>
+                        <p>Для компаний до 8 человек.<br><br>Включена профессиональная фотосъемка (20 обработанных кадров) и расширенный пакет артефактов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking">
+            <div class="container">
+                <h2>Отправиться в путь</h2>
+                <p class="section-desc">Оставьте заявку, и наш тысяцкий свяжется с вами для согласования даты похода.</p>
+                
+                <div class="booking-wrapper">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="userName">Ваше имя (Ярл дружины):</label>
+                            <input type="text" id="userName" name="userName" required placeholder="Как к вам обращаться?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userPhone">Свиток для связи (Телефон):</label>
+                            <input type="tel" id="userPhone" name="userPhone" required placeholder="+7 (___) ___-__-__">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userTariff">Выберите размер дружины:</label>
+                            <select id="userTariff" name="userTariff" required>
+                                <option value="" disabled selected>-- Выберите тариф --</option>
+                                <option value="small">Малая дружина (до 4 чел.) - 2 500 ₽</option>
+                                <option value="large">Княжеский полк (до 8 чел.) - 4 500 ₽</option>
+                            </select>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="legalConsent" name="legalConsent">
+                            <label for="legalConsent">Я даю согласие на обработку моих персональных данных в соответствии с Федеральным законом № 152-ФЗ и принимаю условия Пользовательского соглашения.</label>
+                        </div>
+
+                        <button type="submit" class="btn">Забронировать поход</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Исторический квест «Путь из варяг». Смоленская область.</p>
+            <p>Дизайн и разработка: Учебный курсовой проект.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Навигация
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mainNav = document.getElementById('mainNav');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                hamburgerBtn.classList.remove('active');
+                mainNav.classList.remove('active');
+            });
+        });
+
+        // ==========================================
+        // ИДЕАЛЬНАЯ МАСКА ДЛЯ ТЕЛЕФОНА (с нижними подчеркиваниями)
+        // ==========================================
+        const phoneInput = document.getElementById('userPhone');
+        
+        // Подключаем IMask, который сам заполняет пробелы и подставляет подчеркивания
+        const phoneMask = IMask(phoneInput, {
+            mask: '+{7} (000) 000-00-00',
+            lazy: false,  // Делает шаблон видимым всегда: +7 (___) ___-__-__
+            placeholderChar: '_'
+        });
+
+        // Отправка формы
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const consentCheckbox = document.getElementById('legalConsent');
+            const unmaskedValue = phoneMask.unmaskedValue; // Получаем номер без скобок
+            
+            if (!consentCheckbox.checked) {
+                alert('Необходимо дать согласие на обработку персональных данных согласно 152-ФЗ');
+                return false;
+            }
+            
+            // Проверка, что введено достаточно цифр (7 + 10 цифр номера)
+            if (unmaskedValue.length < 11) {
+                alert('Пожалуйста, введите номер телефона полностью.');
+                return false;
+            }
+            
+            if (typeof ym !== "undefined") {
+                ym(12345678, 'reachGoal', 'Lead_Success');
+            }
+            
+            alert('Славный выбор, Ярл! Заявка успешно оформлена. Мы свяжемся с вами в течение часа.');
+            this.reset();
+            phoneMask.updateValue(); // Сбрасываем маску после отправки
+        });
+    </script>
+</body>
+</html>
